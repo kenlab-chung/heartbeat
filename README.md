@@ -224,9 +224,13 @@ systemctl start heartbeat
 ssh node2 'systemctl start heartbeat'
 ```
 测试VIP可用性
+
 此时查看网络配置情况，可以看到enp5s0:0配置出现，实现了资源转移。
+
 `<center> ![HP](Images/heartbeat-vip-ficonfig.png)</center>`
+
 且VIP可以联通
+
 `<center> ![HP](Images/heartbeat-vip-ficonfig.png)</center>`
 ```
 # curl http://192.168.6.190
